@@ -73,15 +73,6 @@
     </script>
   <![endif]-->
 
-
-  <% unless Rails.env.production? %>
-  <!-- yui profiler and profileviewer - remove for production -->
-  <%= javascript_include_tag 'profiling/yahoo-profiling.min.js' %>
-  <%= javascript_include_tag 'profiling/config.js?v=1' %>
-  <!-- end profiling code -->
-  <% end %>
-
-
   <% if Rails.env.production? %>
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
